@@ -26,7 +26,6 @@ int main() {
         printf("\nThe temperature in Celsius is: %.1f", temp);
     } else {
         printf("\n%c is not a valid unit of measurement", unit);
-        asdasd
     }
 
 
