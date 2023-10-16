@@ -21,7 +21,6 @@ int main() {
     } while(number > 0);
 
     printf("Sum: %d", sum);
-    asdasd
 
     return 0;
 }
