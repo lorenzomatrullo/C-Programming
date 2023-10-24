@@ -13,10 +13,8 @@ int main(){
     printf("%.1lf", prices[4]);
     */
    
-   int i;
-
-   for(i = 0; i < 5; i++){
-    printf("%.1lf\n", prices[i]);
+   for(int i = 0; i < 5; i++){
+    printf("$%.1lf\n", prices[i]);
    }
 
 
