@@ -14,7 +14,7 @@ int main() {
     printf("Inserisci il valore del raggio: ", radius);
     scanf("%lf", &radius);
 
-    circumference = 2 * PI * radius;asd
+    circumference = 2 * PI * radius;
     area = PI * pow(radius, 2);
 
     printf("Il valore della circonferenza: %lf", circumference);
