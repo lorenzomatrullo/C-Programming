@@ -4,11 +4,19 @@
 
 int main(){
 
+    /*
+    double prices[4];
+
+    prices[0] = 5.0;
+    prices[1] = 10.0;
+    prices[2] = 15.0;
+    prices[3] = 20.0;
+    prices[4] = 25.0;
+    */
+
     double prices[] = {5.0, 10.0, 15.0, 20.0, 25.0};
 
-    for(int i = 0; i < 5; i++){
-        printf("$%.2lf\n", prices[i]);
-    }
+    printf("%.1lf", prices[0]);
 
 
     return 0;
