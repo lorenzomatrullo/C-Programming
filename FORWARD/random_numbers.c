@@ -9,7 +9,7 @@
 
 int main(){
 
-    srand(time(0));
+    srand(time(0));                     // uses the current time as a seed to generate random numbers
 
     int number1 = (rand() % 6) + 1;
     int number2 = (rand() % 6) + 1;
