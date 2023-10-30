@@ -23,16 +23,11 @@ int main(){
         "D. C#"
     };
                           
-   char answers[] = {
-        'B', 
-        'A', 
-        'B'
-    };
-
+   char answers[] = {'B', 'A', 'B'};
 
    int numberOfQuestions = sizeof(questions)/sizeof(questions[0]);
 
-   char guess = ' ';
+   char guess;
    int score = 0;
 
    printf("QUIZ GAME\n");    
@@ -48,15 +43,15 @@ int main(){
 
         printf("guess: ");
         scanf("%c", &guess);
-        scanf("%c"); //clear \n from input buffer
+        scanf("%*c"); //clear \n from input buffer
 
         guess = toupper(guess);
 
-        if(guess = answers[i]){
+        if(guess == answers[i]){
             printf("CORRECT!\n");
             score++;
         } else {
-            printf("WRONG!\n");
+            printf("\nWRONG!\n");
         }
 
         printf("*********************\n");
