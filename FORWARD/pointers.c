@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-    pointer = another sort of variable 
+    pointer = a "variable-like" reference that holds a memory address to another variable, array, etc.
 */
 
 void printAge(int *pAge){
