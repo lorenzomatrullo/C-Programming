@@ -108,6 +108,7 @@ void playerMove(){
    } while (board[x][y] != ' ');
    
 }
+
 void computerMove(){
 
    //creates a seed based on current time
