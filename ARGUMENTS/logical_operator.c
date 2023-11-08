@@ -18,7 +18,7 @@ int main(){
     if(temp >= 0 && temp <= 30){
         printf("The weather is good");
     } else {
-        printf("\nTHe weather is bad");
+        printf("\nThe weather is bad");
     }
 
 
