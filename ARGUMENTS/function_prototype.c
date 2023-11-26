@@ -3,7 +3,6 @@
 void hello(char[], int); // function prototype, allows you to type the function after the main one.
 
 
-
 int main() {
     char name[] = "Lorenzo";
     int age = 19;
