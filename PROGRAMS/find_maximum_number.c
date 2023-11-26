@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int find_max(int array[], int length);
+int find_max(int[], int);
 
 
 int main(){

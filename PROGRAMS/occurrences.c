@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int occurrences(int array[], int length, int to_find);
+int occurrences(int[], int, int);
 
 int main(){
     int array1[] = {4, 9, 7, 6, 5, 8, 3, 2, 1, 5, 0, 0, 0, 0};
