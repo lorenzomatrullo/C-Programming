@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/*
+    variables      address     value
+    b (int)        56          10
+    p (pointer)    57          56
+*/
+
+
+
 int main(){
 
     int a = 5;
@@ -12,7 +20,7 @@ int main(){
 
     printf("\n\n");
 
-    // star operator (*) in printf is used to *dereference* a pointer -> giving as output the value of what its pointing to.
+    // star operator (*) in printf is used to **dereference** a pointer -> giving as output the value of what its pointing to.
     printf("Value of b: %d", b);
     printf("\nValue of *p: %d", *p);
 
