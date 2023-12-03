@@ -32,3 +32,4 @@ int vowel_count(char *word){
     }
     return count;
 }
+// https://chat.openai.com/c/933027e8-571e-43f9-a4fe-b8fc42f7c98e
