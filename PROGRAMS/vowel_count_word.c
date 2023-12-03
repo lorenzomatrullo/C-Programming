@@ -5,7 +5,9 @@
 int vowel_count(char *);
 
 int main(){
-    char string1[] = "This is a sentence";
+    char string1[100];
+    printf("Quale frase vuoi che vengano calcolate le vocali?: ");
+    fgets(string1, sizeof(string1), stdin);
 
     int vowel_string = vowel_count(string1);
     printf("In the sentence \"%s\" there is %d vowels", string1, vowel_string);
