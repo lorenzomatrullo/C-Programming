@@ -21,8 +21,8 @@ int main(){
 
     printf("\n\n");
 
-    printf("p[2]: %d\n", p[2]);
     printf("a[2]: %d\n", a[2]);
+    printf("p[2]: %d\n", p[2]);
 
     printf("\n");
 
