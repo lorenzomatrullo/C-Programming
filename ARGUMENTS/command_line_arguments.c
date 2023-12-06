@@ -3,7 +3,8 @@
 
 // argc = arguments count
 // argv = arguments value
-// This allows you to work with inputs directly in cmd
+// This allows you to work with inputs directly in 
+// *you need to run the code using the cmd to make it work*
 
 int main(int argc, int *argv[]){
 
