@@ -28,7 +28,7 @@ int main(){
     // iterative solution to computing factorial
     /*
         while(n <= 1){
-            factorial = n * factorial;
+            fact = n * fact;
             n--;
         }
     */
