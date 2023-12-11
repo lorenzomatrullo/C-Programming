@@ -5,7 +5,6 @@
 
 int vowel_count(char *string);
 
-
 int main(){
     char string1[] = "This is my sentence";
     char string2[] = "Another sentence for me";
