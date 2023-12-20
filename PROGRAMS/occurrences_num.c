@@ -25,7 +25,16 @@ int occurrences(int array[], int length, int to_find){
     int count = 0;
 
     // check each array element, increment count whenever a match is found
-    for(int i = 0; i < length; i++){
+    // for(int i = 0; i < length; i++){
+    //     if(array[i] == to_find){
+    //         count++;
+    //     }
+    // }
+
+    int i = 0;
+    while(i < length){
+        i++;
+        
         if(array[i] == to_find){
             count++;
         }
