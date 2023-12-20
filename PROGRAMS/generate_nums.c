@@ -10,7 +10,6 @@ int main(){
         int num = rand() % 100 + 1;
         printf("num[%d] = %d\n", i + 1, num);
     }
-   
 
     return 0;
 }
