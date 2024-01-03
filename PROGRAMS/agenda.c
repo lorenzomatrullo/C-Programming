@@ -14,7 +14,7 @@ void calculateCategoryHours(struct Appointment agenda[MONTHS][DAYS][HOURS]);
 void describeStatistics(struct Appointment agenda[MONTHS][DAYS][HOURS]);
 void performAgendaOperations(struct Appointment agenda[MONTHS][DAYS][HOURS]);
 
-const char* categoryNames[CATEGORIES] = {"Work", "Home", "Sport"};
+const char *categoryNames[CATEGORIES] = {"Work", "Home", "Sport"};
 
 int main() {
     struct Appointment agenda[MONTHS][DAYS][HOURS] = {{{0}}};
@@ -25,7 +25,7 @@ int main() {
 void addAppointment(struct Appointment agenda[MONTHS][DAYS][HOURS]) {
     int month, day, hour, category;
     
-    printf("Enter the month (1 to 12): ");
+    printf("\nEnter the month (1 to 12): ");
     scanf("%d", &month);
 
     printf("Enter the day (1 to 30): ");
@@ -94,7 +94,7 @@ void describeStatistics(struct Appointment agenda[MONTHS][DAYS][HOURS]) {
         }
     }
 
-    printf("Statistics of hours dedicated to each category:\n");
+    printf("\nStatistics of hours dedicated to each category:\n");
     printf("%s: %d hours\n", categoryNames[0], hoursPerCategory[0]);
     printf("%s: %d hours\n", categoryNames[1], hoursPerCategory[1]);
     printf("%s: %d hours\n", categoryNames[2], hoursPerCategory[2]);
