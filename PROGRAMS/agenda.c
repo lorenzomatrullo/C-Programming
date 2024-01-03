@@ -24,6 +24,7 @@ int main() {
 
 void addAppointment(struct Appointment agenda[MONTHS][DAYS][HOURS]) {
     int month, day, hour, category;
+    
     printf("Enter the month (1 to 12): ");
     scanf("%d", &month);
 
@@ -32,7 +33,7 @@ void addAppointment(struct Appointment agenda[MONTHS][DAYS][HOURS]) {
 
     printf("Enter the hour (0 to 23): ");
     scanf("%d", &hour);
-    
+
     printf("Select the category (1 = work, 2 = home, 3 = sport): ");
     scanf("%d", &category);
 

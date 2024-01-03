@@ -42,12 +42,13 @@ void aggiungiAppuntamento(struct Appuntamento agenda[MESI][GIORNI][ORE]) {
 void calcolaOreCategoria(struct Appuntamento agenda[MESI][GIORNI][ORE]) {
 
     int categoria, mese1, giorno1, mese2, giorno2;
+    
     printf("Seleziona la categoria (1 = lavoro, 2 = casa, 3 = sport): ");
     scanf("%d", &categoria);
 
     printf("Inserisci la data di inizio (mese giorno): ");
     scanf("%d %d", &mese1, &giorno1);
-    
+
     printf("Inserisci la data di fine (mese giorno): ");
     scanf("%d %d", &mese2, &giorno2);
 
