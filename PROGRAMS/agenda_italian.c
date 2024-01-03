@@ -6,7 +6,7 @@
 #define CATEGORIE 3
 
 struct Appuntamento {
-    int categorias;
+    int categoria;
 };
 
 void aggiungiAppuntamento(struct Appuntamento agenda[MESI][GIORNI][ORE]);

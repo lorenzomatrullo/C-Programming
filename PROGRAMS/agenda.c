@@ -6,7 +6,7 @@
 #define CATEGORIES 3
 
 struct Appointment {
-    int categorys;
+    int category;
 };
 
 void addAppointment(struct Appointment agenda[MONTHS][DAYS][HOURS]);
