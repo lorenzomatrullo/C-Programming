@@ -6,7 +6,7 @@
 #define CATEGORIE 3
 
 struct Appuntamento {
-    int categoria;
+    int categorias;
 };
 
 void aggiungiAppuntamento(struct Appuntamento agenda[MESI][GIORNI][ORE]);
@@ -24,6 +24,7 @@ int main() {
 
 void aggiungiAppuntamento(struct Appuntamento agenda[MESI][GIORNI][ORE]) {
     int mese, giorno, ora, categoria;
+
     printf("Inserisci il mese (1-12): ");
     scanf("%d", &mese);
 
