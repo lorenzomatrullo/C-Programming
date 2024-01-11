@@ -18,7 +18,47 @@ const char OBSTACLE = 'O';
 
 char board[GRID_WIDTH][GRID_HEIGHT];
 
+void initializeBoard();
+void spawnObstacle();
+void movePlayer();
+void moveObstacle();
+int checkCollision();
+void printBoard();
+void runGame();
 
+int main();
+
+void runGame() {
+    int steps = 0;
+
+    while (steps < MAX_STEPS) {
+        printBoard();
+        printf("Step %d - Press Enter to continue to the next step...", steps + 1);
+        getchar(); // Wait for user input to continue
+
+        movePlayer();
+        moveObstacle();
+
+        if (checkCollision()) {
+            printf("\nGame Over! The player collided with an obstacle.\n");
+            break;
+        }
+
+        steps++;
+    }
+
+    printf("\nGame Over! Maximum steps reached.\n");
+}
+
+int main() {
+    srand((unsigned int)time(NULL));
+
+    initializeBoard();
+
+    runGame();
+
+    return 0;
+}
 
 void initializeBoard() {
     for (int i = 0; i < GRID_HEIGHT; i++) {
@@ -27,27 +67,20 @@ void initializeBoard() {
         }
     }
 
-    // Set the player at the last row and center
     board[GRID_HEIGHT - 1][GRID_WIDTH / 2] = PLAYER;
 
-    // Set two obstacles symmetrically in the first row
     int obstacleColumn1 = GRID_WIDTH / 2 - 2;
     int obstacleColumn2 = GRID_WIDTH / 2 + 2;
     board[0][obstacleColumn1] = OBSTACLE;
     board[0][obstacleColumn2] = OBSTACLE;
 }
 
-
-
 void spawnObstacle() {
     int obstacleColumn = rand() % GRID_WIDTH;
     board[0][obstacleColumn] = OBSTACLE;
 }
 
-
-
 void movePlayer() {
-    // Find the current position of the player
     int playerRow, playerColumn;
 
     for (int i = 0; i < GRID_HEIGHT; i++) {
@@ -60,24 +93,18 @@ void movePlayer() {
         }
     }
 
-    // Move the player left or right randomly
-    int direction = rand() % 2; // 0 for left, 1 for right
+    int direction = rand() % 2;
     playerColumn += (direction == 0 && playerColumn > 0) ? -1 : (direction == 1 && playerColumn < GRID_WIDTH - 1) ? 1 : 0;
 
-    // Move the player to the new position
     board[GRID_HEIGHT - 1][playerColumn] = PLAYER;
 }
 
-
-
 void moveObstacle() {
-    // Move obstacles downward
     for (int i = GRID_HEIGHT - 1; i >= 0; i--) {
         for (int j = 0; j < GRID_WIDTH; j++) {
             if (board[i][j] == OBSTACLE) {
                 board[i][j] = EMPTY;
 
-                // Respawn at the first row if reached the bottom
                 if (i < GRID_HEIGHT - 1) {
                     board[i + 1][j] = OBSTACLE;
                 } else {
@@ -88,14 +115,9 @@ void moveObstacle() {
     }
 }
 
-
-
 int checkCollision() {
-    // Check if the player collided with an obstacle
     return (board[GRID_HEIGHT - 1][GRID_WIDTH / 2] == OBSTACLE);
 }
-
-
 
 void printBoard() {
     system("clear || cls");
@@ -135,34 +157,4 @@ void printBoard() {
     }
 
     printf("-%s\n", COLOR_RESET);
-}
-
-
-
-int main() {
-    srand((unsigned int)time(NULL));
-
-    initializeBoard();
-
-    int steps = 0;
-
-    while (steps < MAX_STEPS) {
-        printBoard();
-        printf("Step %d - Press Enter to continue to the next step...", steps + 1);
-        getchar(); // Wait for user input to continue
-
-        movePlayer();
-        moveObstacle();
-
-        if (checkCollision()) {
-            printf("\nGame Over! The player collided with an obstacle.\n");
-            break;
-        }
-
-        steps++;
-    }
-
-    printf("\nGame Over! Maximum steps reached.\n");
-
-    return 0;
 }
