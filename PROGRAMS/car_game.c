@@ -26,7 +26,6 @@ int checkCollision();
 void printBoard();
 void runGame();
 
-int main();
 
 void runGame() {
     int steps = 0;
@@ -50,6 +49,8 @@ void runGame() {
     printf("\nGame Over! Maximum steps reached.\n");
 }
 
+
+
 int main() {
     srand((unsigned int)time(NULL));
 
@@ -59,6 +60,8 @@ int main() {
 
     return 0;
 }
+
+
 
 void initializeBoard() {
     for (int i = 0; i < GRID_HEIGHT; i++) {
@@ -75,10 +78,14 @@ void initializeBoard() {
     board[0][obstacleColumn2] = OBSTACLE;
 }
 
+
+
 void spawnObstacle() {
     int obstacleColumn = rand() % GRID_WIDTH;
     board[0][obstacleColumn] = OBSTACLE;
 }
+
+
 
 void movePlayer() {
     int playerRow, playerColumn;
@@ -99,6 +106,8 @@ void movePlayer() {
     board[GRID_HEIGHT - 1][playerColumn] = PLAYER;
 }
 
+
+
 void moveObstacle() {
     for (int i = GRID_HEIGHT - 1; i >= 0; i--) {
         for (int j = 0; j < GRID_WIDTH; j++) {
@@ -115,9 +124,13 @@ void moveObstacle() {
     }
 }
 
+
+
 int checkCollision() {
     return (board[GRID_HEIGHT - 1][GRID_WIDTH / 2] == OBSTACLE);
 }
+
+
 
 void printBoard() {
     system("clear || cls");
