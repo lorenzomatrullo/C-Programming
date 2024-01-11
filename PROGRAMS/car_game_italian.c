@@ -4,7 +4,7 @@
 
 #define LARGHEZZA_GRIGLIA 7
 #define ALTEZZA_GRIGLIA 6
-#define MASSIMO_PASSI 100
+#define MASSIMI_PASSI 100
 
 #define COLORE_GIALLO "\033[1;33m"
 #define COLORE_BLU "\033[0;34m"
@@ -18,6 +18,27 @@ const char OSTACOLO = 'O';
 
 char griglia[LARGHEZZA_GRIGLIA][ALTEZZA_GRIGLIA];
 
+void inizializzaGriglia();
+void generaOstacolo();
+void muoviGiocatore();
+void muoviOstacolo();
+int controllaCollisione();
+void stampaGriglia();
+void eseguiPartita();
+
+
+
+int main() {
+    srand((unsigned int)time(NULL));
+
+    inizializzaGriglia();
+
+    eseguiPartita();
+
+    return 0;
+}
+
+
 
 void inizializzaGriglia() {
     for (int i = 0; i < ALTEZZA_GRIGLIA; i++) {
@@ -26,10 +47,8 @@ void inizializzaGriglia() {
         }
     }
 
-    // Posiziona il giocatore nell'ultima riga e al centro
     griglia[ALTEZZA_GRIGLIA - 1][LARGHEZZA_GRIGLIA / 2] = GIOCATORE;
 
-    // Posiziona due ostacoli simmetricamente nella prima riga
     int colonnaOstacolo1 = LARGHEZZA_GRIGLIA / 2 - 2;
     int colonnaOstacolo2 = LARGHEZZA_GRIGLIA / 2 + 2;
     griglia[0][colonnaOstacolo1] = OSTACOLO;
@@ -38,7 +57,7 @@ void inizializzaGriglia() {
 
 
 
-void spawnOstacolo() {
+void generaOstacolo() {
     int colonnaOstacolo = rand() % LARGHEZZA_GRIGLIA;
     griglia[0][colonnaOstacolo] = OSTACOLO;
 }
@@ -46,7 +65,6 @@ void spawnOstacolo() {
 
 
 void muoviGiocatore() {
-    // Trova la posizione corrente del giocatore
     int rigaGiocatore, colonnaGiocatore;
 
     for (int i = 0; i < ALTEZZA_GRIGLIA; i++) {
@@ -59,28 +77,24 @@ void muoviGiocatore() {
         }
     }
 
-    // Muovi il giocatore a sinistra o a destra casualmente
-    int direzione = rand() % 2; // 0 per sinistra, 1 per destra
+    int direzione = rand() % 2;
     colonnaGiocatore += (direzione == 0 && colonnaGiocatore > 0) ? -1 : (direzione == 1 && colonnaGiocatore < LARGHEZZA_GRIGLIA - 1) ? 1 : 0;
 
-    // Muovi il giocatore alla nuova posizione
     griglia[ALTEZZA_GRIGLIA - 1][colonnaGiocatore] = GIOCATORE;
 }
 
 
 
 void muoviOstacolo() {
-    // Muovi gli ostacoli verso il basso
     for (int i = ALTEZZA_GRIGLIA - 1; i >= 0; i--) {
         for (int j = 0; j < LARGHEZZA_GRIGLIA; j++) {
             if (griglia[i][j] == OSTACOLO) {
                 griglia[i][j] = VUOTO;
 
-                // Respawn alla prima riga se raggiunge il fondo
                 if (i < ALTEZZA_GRIGLIA - 1) {
                     griglia[i + 1][j] = OSTACOLO;
                 } else {
-                    spawnOstacolo();
+                    generaOstacolo();
                 }
             }
         }
@@ -89,8 +103,7 @@ void muoviOstacolo() {
 
 
 
-int verificaCollisione() {
-    // Verifica se il giocatore ha colliso con un ostacolo
+int controllaCollisione() {
     return (griglia[ALTEZZA_GRIGLIA - 1][LARGHEZZA_GRIGLIA / 2] == OSTACOLO);
 }
 
@@ -138,22 +151,18 @@ void stampaGriglia() {
 
 
 
-int main() {
-    srand((unsigned int)time(NULL));
-
-    inizializzaGriglia();
-
+void eseguiPartita() {
     int passi = 0;
 
-    while (passi < MASSIMO_PASSI) {
+    while (passi < MASSIMI_PASSI) {
         stampaGriglia();
-        printf("Passo %d - Premi Invio per continuare al passo successivo...", passi + 1);
-        getchar(); // Attendi l'input dell'utente per continuare
+        printf("Passo %d - Premi Invio per continuare al prossimo passo...", passi + 1);
+        getchar(); // Aspetta l'input dell'utente per continuare
 
         muoviGiocatore();
         muoviOstacolo();
 
-        if (verificaCollisione()) {
+        if (controllaCollisione()) {
             printf("\nGame Over! Il giocatore ha colliso con un ostacolo.\n");
             break;
         }
@@ -161,7 +170,5 @@ int main() {
         passi++;
     }
 
-    printf("\nGame Over! Massimo numero di passi raggiunto.\n");
-
-    return 0;
+    printf("\nGame Over! Massimi passi raggiunti.\n");
 }
