@@ -25,7 +25,7 @@
 
 <br>
 
-**2)** Dunque, ad ogni posizione dell'array viene confrontato l'elemento corrente con quello alla sua sinistra, e se questo risulta inferiore viene spostato come primo elemento attraverso un `metodo di variabili temporanee`.
+**2)** Dunque, ad ogni posizione dell'array viene confrontato l'elemento corrente con quello alla sua sinistra, e se questo risulta inferiore viene spostato come primo elemento attraverso un `metodo di scambio tra variabili temporanee`.
 
 <br>
 
