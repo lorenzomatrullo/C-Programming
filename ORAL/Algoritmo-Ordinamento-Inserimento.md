@@ -22,13 +22,14 @@ OUTPUT: array con i dati ordinati
 
 `array[j] = elemento alla sinistra di elemento corrente`
 
+<br>
 
-*L'AOINS è basato sull'approccio incrementale, per questo viene utilizzato il `for loop` affinchè si possa ripetere l'azione di ordinamento dell'array fino alla fine dell'array.*
+**1)** *L'AOINS è basato sull'approccio incrementale, per questo viene utilizzato il `for loop` affinchè si possa ripetere l'azione di ordinamento dell'array fino alla fine dell'array.*
 
 
-*Dunque, ad ogni posizione dell'array viene confrontato l'elemento corrente con quello alla sua sinistra, e se questo risulta inferiore viene spostato come primo elemento attraverso un metodo di variabili temporanee.*
+**2)** *Dunque, ad ogni posizione dell'array viene confrontato l'elemento corrente con quello alla sua sinistra, e se questo risulta inferiore viene spostato come primo elemento attraverso un metodo di variabili temporanee.*
 
-*Infine, viene ripetuto il processo fino al raggiungimento dell'ultima posizione dell'array affinchè la condizione di ordinamento sia valida.*
+**3)** *Infine, viene ripetuto il processo fino al raggiungimento dell'ultima posizione dell'array affinchè la condizione di ordinamento sia valida.*
 
 <br>
 
