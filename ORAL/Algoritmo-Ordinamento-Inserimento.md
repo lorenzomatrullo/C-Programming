@@ -17,7 +17,7 @@
 `array[j + 1] = elemento corrente`
 <br>
 
-`array[j] = elemento alla sinistra di elemento corrente`
+`array[j] = elemento alla sinistra dell'elemento corrente`
 
 <br></br>
 
