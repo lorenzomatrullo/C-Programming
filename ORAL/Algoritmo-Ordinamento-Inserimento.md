@@ -12,7 +12,7 @@
 
 *Viene utilizzato `size - 1` perchè l'indice degli array in programmazione C inizia da 0.*
 <br>
-*Dato che il nostro scopo è quello di confrontare il l'elemento corrente dell'array con quello che lo precede, se iniziassimo da `i = 0` non avremmo elementi a sinistra da confrontare, in quanto non ci sono indici inferiori a 0.*
+*Dato che il nostro scopo è quello di confrontare l'elemento corrente dell'array con quello che lo precede, se iniziassimo da `i = 0` non avremmo elementi a sinistra da confrontare, in quanto non ci sono indici inferiori a 0.*
 
 `array[j + 1] = elemento corrente`
 <br>
