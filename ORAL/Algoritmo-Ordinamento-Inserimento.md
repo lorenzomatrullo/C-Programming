@@ -1,17 +1,14 @@
 # Illustrare l’Algoritmo di Ordinamento per Inserimento (AOINS)
+*Lo scopo di un Algoritmo di Ordinamento è ordinare un array di dati.*
+
+
+* **DATI** --> numeri, caratteri, stringhe di caratteri o qualsiasi altro insieme di dati
+
+* **INPUT** --> array + array size
+
+* **OUTPUT** --> array con i dati ordinati
 
 <br>
-
-Lo scopo di un Algoritmo di Ordinamento è ordinare un array di dati.
-
-
-DATI: numeri, caratteri, stringhe di caratteri o qualsiasi altro insieme di dati
-
-INPUT: array + array size
-
-OUTPUT: array con i dati ordinati
-
-
 
 *Viene utilizzato `size - 1` perchè l'indice degli array in programmazione C inizia da 0.*
 <br>
