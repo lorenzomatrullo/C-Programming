@@ -22,7 +22,7 @@ OUTPUT: array con i dati ordinati
 
 `array[j] = elemento alla sinistra di elemento corrente`
 
-<br>
+<br></br>
 
 **1)** L'AOINS è basato sull'approccio incrementale, per questo viene utilizzato il `for loop` affinchè si possa ripetere l'azione di ordinamento dell'array fino alla fine dell'array.
 
