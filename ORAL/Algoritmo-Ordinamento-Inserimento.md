@@ -1,4 +1,4 @@
-# Illustrare l’Algoritmo di Ordinamento per Inserimento (AOINS)
+# Algoritmo di Ordinamento per Inserimento (AOINS)
 *Lo scopo di un Algoritmo di Ordinamento è ordinare un array di dati.*
 
 
