@@ -1,5 +1,5 @@
 // Algoritmo di Ordinamento per Selezione di Massimo (AOSMAX)
-// Lo scopo di un Algoritmo di Ordinamento per Selezione di Massimo è ordinare un array di dati trovando ripetutamente l'elemento massimo nell'array e spostarlo nella posizione corretta.
+// Lo scopo di un Algoritmo di Ordinamento per Selezione di Massimo è ordinare un array di dati trovando ripetutamente l'elemento massimo nell'array e scambiarlo con l'ultimo elemento dell'array non ordinato, e spostarlo nella posizione corretta.
 
 #include <stdio.h>
 

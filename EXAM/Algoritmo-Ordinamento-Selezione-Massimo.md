@@ -1,5 +1,5 @@
 # Algoritmo di Ordinamento per Selezione di Massimo (AOSMAX)
-*Lo scopo di un Algoritmo di Ordinamento per Selezione di Massimo è ordinare un array di dati trovando ripetutamente l'elemento massimo nell'array e spostarlo nella posizione corretta.*
+*Lo scopo di un Algoritmo di Ordinamento per Selezione di Massimo è ordinare un array di dati trovando ripetutamente l'elemento massimo nell'array e scambiarlo con l'ultimo elemento dell'array non ordinato, e spostarlo nella posizione corretta.*
 
 * **DATI** --> numeri, caratteri, stringhe di caratteri o qualsiasi altro insieme di dati
 
@@ -21,6 +21,8 @@
 **2)** Il primo `for loop` inizia dal fondo dell'array grazie alla seguente espressione `int i = size - 1`.
 <br>
 Il ciclo continua fintanto che l'indice `i` è maggiore di 0, poichè l'algoritmo sposta il massimo elemento verso la fine dell'array.
+<br>
+Nel frattempo il secondo ciclo `j` continua fintanto che `j < i` incrementanto `j` ad ogni iterazione.
 
 <br>
 
