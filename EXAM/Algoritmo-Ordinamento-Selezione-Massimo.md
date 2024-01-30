@@ -11,7 +11,7 @@
 
 *Viene utilizzato `size - 1` perchè l'indice degli array in programmazione C inizia da 0.*
 <br>
-*Dato che il nostro scopo è quello di confrontare l'elemento massimo dell'array con quello minimo, se iniziassimo da `i = 0` non avremmo elementi a sinistra da confrontare, in quanto non ci sono indici inferiori a 0.*
+*Dato che il nostro scopo è quello di scambiare l'elemento massimo dell'array con l'ultimo elemento dell'array non ordinato, se iniziassimo da `i = 0` non avremmo elementi a sinistra da confrontare, in quanto non ci sono indici inferiori a 0.*
 
 
 **1)** L'AOSMAX è basato sull'approccio incrementale, per questo viene utilizzato il `for loop` affinchè si possa ripetere l'azione di ordinamento finchè le condizioni espresse siano accettate.
