@@ -44,6 +44,10 @@ Quindi, vengono eseguiti altri due `while loop` per copiare eventuali elementi r
 
 <br>
 
+**5)** Una volta terminati questi cicli, `arrays_merged` conterrà **TUTTI** gli elementi combinati in modo **ORDINATO** provenienti da `array1` e `array2`.
+
+<br>
+
 
 ```c
 // INPUT
