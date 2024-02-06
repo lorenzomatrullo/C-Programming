@@ -26,7 +26,6 @@ int main(){
 int word_count(char *string, char *word){
     int string_length = strlen(string);
     int word_length = strlen(word);
-
     int end = string_length - word_length + 1;
 
     int count = 0;
