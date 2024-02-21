@@ -1,3 +1,5 @@
+// Algoritimo di Fusione
+
 #include <stdio.h>
 
 void merge(int array1[], int array1_length, int array2[], int array2_length, int arrays_merged[]);

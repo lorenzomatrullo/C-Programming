@@ -1,3 +1,5 @@
+// Algoritimo di Ordinamento per Selezione di Minimo
+
 #include <stdio.h>
 
 void AOSMIN(int [], int);
