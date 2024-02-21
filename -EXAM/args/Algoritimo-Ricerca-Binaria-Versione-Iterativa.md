@@ -5,20 +5,18 @@ L'algoritmo di Ricerca Binaria è un algoritmo per trovare un elemento all'inter
 Funziona dividendo ripetutamente l'intervallo di ricerca a metà fino a trovare l'elemento desiderato.
 
 
-1. **Inizializzazione**:
-   - Assicurarsi che l'array sia ordinato in modo crescente.
-   - Definire l'intervallo di ricerca utilizzando due indici: `sinistra` e `destra`.
+1. **Inizializzazione:**
+   - Si parte da un array ordinato in modo crescente.
 
-2. **Ciclo di Ricerca**:
-   - Entrare in un ciclo finché `sinistra` è minore o uguale a `destra`.
-   - Se `sinistra` supera `destra`, significa che abbiamo esaminato tutto l'intervallo e la ricerca è terminata.
+2. **Definizione dell'Intervallo di Ricerca:**
+   - Si prendono due estremi, solitamente l'inizio e la fine dell'array.
+   - Si calcola il punto medio dell'intervallo `(sinistra + destra) / 2`.
 
-3. **Calcolo dell'Indice Medio**:
-   - Calcolare l'indice medio dell'intervallo corrente con la formula `(sinistra + destra) / 2`.
+3. **Confronto con l'Elemento Mediano:**
+   - Si confronta l'elemento da cercare con l'elemento al punto medio dell'intervallo.
+   - Se corrispondono, l'elemento è stato trovato e si restituisce la sua posizione.
 
-4. **Confronto**:
-   - Confrontare il valore corrispondente all'indice medio con il valore cercato.
-   - Se corrispondono, restituire la posizione dell'elemento.
+4. **Ricerca Iterativa:**
    - Se il valore corrispondente è maggiore del valore cercato, spostare `destra` a `medio - 1`.
    - Se il valore corrispondente è minore del valore cercato, spostare `sinistra` a `medio + 1`.
 
