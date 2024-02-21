@@ -36,9 +36,9 @@ int binary_search(int array[], int array_length, int find){
     while(left <= right){
         int middle = (left + right) / 2;
 
-        if(array[middle] == find){
+        if (array[middle] == find){
             return middle;
-        } else if(array[middle] < find){
+        } else if (array[middle] < find){
             left = middle + 1;
         } else {
             right = middle - 1;
