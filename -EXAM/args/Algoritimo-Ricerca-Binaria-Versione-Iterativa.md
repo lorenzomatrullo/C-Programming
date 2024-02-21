@@ -1,4 +1,4 @@
-# Algoritmo di Ricerca Binaria (Versione Iterativa)
+# Algoritmo di Ricerca Binaria - Versione Iterativa (ARBINi)
 
 L'algoritmo di Ricerca Binaria è un algoritmo per trovare un elemento all'interno di un array ordinato. 
 <br>
