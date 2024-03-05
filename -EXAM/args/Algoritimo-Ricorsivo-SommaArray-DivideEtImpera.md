@@ -10,24 +10,7 @@ Il codice è composto da due funzioni:
 1. `sum_subarray`: Questa funzione calcola ricorsivamente la somma di un sottoarray.
 2. `sum_array`: Questa funzione funge da punto di ingresso per la somma dell'intero array.
 
-### Funzione `sum_subarray`
-- **Parametri**: 
-  - `array[]`: L'array contenente gli elementi da sommare.
-  - `left`: L'indice di inizio del sottoarray.
-  - `right`: L'indice di fine del sottoarray.
-- **Casi Base**: 
-  - Se `left` è maggiore di `right`, significa che il sottoarray è vuoto, quindi la funzione restituisce 0.
-  - Se `left` è uguale a `right`, significa che il sottoarray ha un solo elemento, quindi la funzione restituisce quell'elemento.
-- **Caso Ricorsivo**: 
-  - Il sottoarray viene diviso in due metà, e la funzione viene chiamata ricorsivamente per ciascuna metà.
-  - I risultati delle metà sinistra e destra vengono sommati insieme e restituiti.
-
-## Utilizzo
-1. Inizializzare un array con gli elementi desiderati.
-2. Chiamare `sum_array` con l'array e la sua lunghezza.
-3. La funzione restituirà la somma degli elementi dell'array.
-
-
+<br>
 
 ## Funzionamento dell'Algoritmo
 
@@ -39,11 +22,11 @@ Il codice è composto da due funzioni:
    - Si prendono due estremi, solitamente l'inizio e la fine dell'array.
    - Si calcola il punto medio dell'intervallo `(sinistra + destra) / 2`.
 
-3. **Caso Base:**
+3. **Function Sub Array (Caso Base):**
    - Se `left` è maggiore di `right`, significa che il sottoarray è vuoto, quindi la funzione restituisce 0.
    - Se `left` è uguale a `right`, significa che il sottoarray ha un solo elemento, quindi la funzione restituisce quell'elemento.
  
-4. **Caso Ricorsiva:**
+4. **Function Sub Array (Caso Ricorsiva):**
    - Il sottoarray viene diviso in due metà, e la funzione viene chiamata ricorsivamente per ciascuna metà.
    - I risultati delle metà sinistra e destra vengono sommati insieme e restituiti.
 
