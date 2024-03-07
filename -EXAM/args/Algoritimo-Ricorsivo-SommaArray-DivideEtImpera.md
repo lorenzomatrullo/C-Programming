@@ -26,7 +26,7 @@ Il codice è composto da due funzioni:
    - Se `left` è maggiore di `right`, significa che il sottoarray è vuoto, quindi la funzione restituisce 0.
    - Se `left` è uguale a `right`, significa che il sottoarray ha un solo elemento, quindi la funzione restituisce quell'elemento.
  
-4. **Function Sub Array (Caso Ricorsiva):**
+4. **Function Sub Array (Caso Ricorsivo):**
    - Il sottoarray viene diviso in due metà, e la funzione viene chiamata ricorsivamente per ciascuna metà.
    - I risultati delle metà sinistra e destra vengono sommati insieme e restituiti.
 
