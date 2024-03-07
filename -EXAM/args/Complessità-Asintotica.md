@@ -24,7 +24,7 @@ Rappresenta il <ins>**tempo di esecuzione**</ins> : ossia quante operazioni l'al
 
 <br>
 
-![COMPLESSITÀ-TEMPO](../imgs/complesittà-tempo.png)
+![COMPLESSITÀ-TEMPO](../imgs/complessità-di-tempo.png)
 
 <br>
 
