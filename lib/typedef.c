@@ -3,13 +3,19 @@
 // typedef = reserved keyword that gives an existing datatype a "nickname"
 
 
+typedef char user[25];
+
+
 typedef struct {
     char name[25];
     char password[25];
     int id;
 }User;
 
+
 int main(){
+
+    user player1 = "Lorenzo";
 
     User user1 = {"Bro", "password123", 123456789};
     User user2 = {"Bruh", "password321", 987654321};
