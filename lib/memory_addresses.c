@@ -5,6 +5,7 @@
     memory block = a single unit of byte within MEMORY, used to hold some value
     memory address = the address of where a MEMORY BLOCK is located
     It can be accessed with & (address-of operator)
+    Memory addresses are likely to change everytime we run the program
 */
 
 // HEXADECIMAL: 0-9 + A-F
