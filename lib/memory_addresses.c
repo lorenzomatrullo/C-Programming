@@ -4,6 +4,7 @@
     memory = an array of bytes within RAM
     memory block = a single unit of byte within MEMORY, used to hold some value
     memory address = the address of where a MEMORY BLOCK is located
+    It can be accessed with & (address-of operator)
 */
 
 // HEXADECIMAL: 0-9 + A-F
