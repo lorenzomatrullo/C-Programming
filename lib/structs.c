@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
-// struct = collection of related members ("variable")
-//          they can be of different data types listed under one name in a block of memory, VERY SIMILAR to classes in other languages (but no methods).
+/*
+    STRUCT = a structure that group releated variabless, under one name.
 
+    structs caan contain many different data types (string, int, double, bool, etc.)
+    variables in a struct are known as "members".
+    members can be access with "." = Class Member Access Operator
+*/
 
 struct Player{
     char name[12];
