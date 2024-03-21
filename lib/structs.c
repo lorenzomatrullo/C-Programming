@@ -28,6 +28,8 @@ int main(){
     printf("Name: %s\n", player1.name);
     printf("Score: %d\n", player1.score);
 
+    printf("\n");
+
     printf("Name: %s\n", player2.name);
     printf("Score: %d\n", player2.score);
 
