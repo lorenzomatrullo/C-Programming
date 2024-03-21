@@ -12,6 +12,7 @@ void printAge(int *pAge){
 int main() {
     int age = 19;
     int *pAge = &age;
+    // as a convention to declare a pointer we use "p before the actual variable name and the next character will be uppercase"
 
     /*
     printf("Address of age %p\n", &age);
