@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-// enum = a user defined type of named integer identifiers.
-//        helps to make a program more readable
+/*
+    ENUMS = a user-defined data type that consists of paired named-integer constants.
 
+    GREAT if you have a set of potential options
+*/
 
 enum Day{
     Sun = 1, 
