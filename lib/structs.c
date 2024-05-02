@@ -2,9 +2,9 @@
 #include <string.h>
 
 /*
-    STRUCT = a structure that group releated variabless, under one name.
+    STRUCT = a structure that group releated variables, under one name.
 
-    structs caan contain many different data types (string, int, double, bool, etc.)
+    structs can contain many different data types (string, int, double, bool, etc.)
     variables in a struct are known as "members".
     members can be access with "." = Class Member Access Operator
 */
