@@ -1,3 +1,15 @@
+/*
+    TRACCIA 7:
+    Scrivere una funzione che dati in input 2 array di strutture del seguente tipo:
+    struct Prodotto {
+        char *nome;
+        int codice;
+        double prezzo;
+    };
+    Restituisce in output 1 se i 2 array di struct sono uguali, e 0 se non lo sono.
+    Si nota che i 2 dati struct sono uguali se sono uguali tutti i loro campi.
+*/
+
 #include <stdio.h>
 #include <string.h>
 
