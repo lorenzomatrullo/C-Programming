@@ -1,3 +1,10 @@
+/*
+    TRACCIA 21:
+    Scrivi un programma per simulare l'inserimento di un PIN per il telefono.
+    Prima Fase: viene costruito il PIN di riferimento, che deve essere di lunghezza 5 e che dessere cotruito in modo casuale.
+    Seconda Fase: l'utente inserisce il codice in tentativi e ha al massimo 3 tentativi per indovinarlo.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
