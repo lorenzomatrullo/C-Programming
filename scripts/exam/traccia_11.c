@@ -1,3 +1,9 @@
+/*
+    TRACCIA 11:
+    Sviluppaare una function C che, dato come parametro di input una stringa che rappresenta un testo in italiano, determina e restituisce come parametro di output il numero delle parole contenute nel testo che hanno almeno 5 vocali.
+    Nel testo le parole sono separate da un unico spazio.
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
