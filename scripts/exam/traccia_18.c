@@ -1,3 +1,9 @@
+/*
+    TRACCIA 18:
+    Sviluppa una function C che, dati come parametri di input un array di char e il suo size.
+    Determina e resituisce come parametro di outut il caraterrere piu frequente.
+*/
+
 #include <stdio.h>
 
 char mostFrequentCharacter(char *array, int array_size) {
