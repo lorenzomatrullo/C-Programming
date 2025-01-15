@@ -30,7 +30,7 @@ int main() {
 
     int length = minLength(string, minWord);
 
-    printf("THe shortest word is: %s\n", minWord);
+    printf("The shortest word is: %s\n", minWord);
     printf("Its length is: %d\n", length);
 
     return 0;
