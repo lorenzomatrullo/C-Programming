@@ -8,7 +8,7 @@
 #include <string.h>
 #include <ctype.h>  // Per la funzione tolower()
 
-// Funzione che conta le occurrences delle lettere dell'alphabet_it italiano
+// Funzione che conta le occurrences delle lettere dell'alphabet_it
 void countOccurrences(const char *string, int *occurrences, const char *alphabet_it) {
     // Inizializza l'array delle occurrences a zero
     for (int i = 0; i < 21; i++) {
