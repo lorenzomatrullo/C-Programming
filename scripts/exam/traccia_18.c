@@ -30,7 +30,7 @@ char mostFrequentCharacter(char *array, int array_size) {
 }
 
 int main() {
-    char array[] = "aaaaeeeee";
+    char array[] = "aaaaeeeeef";
     int array_size = sizeof(array) - 1; // Exclude the null terminator
 
     char result = mostFrequentCharacter(array, array_size);
