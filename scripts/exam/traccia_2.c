@@ -14,7 +14,7 @@ struct punto {
 };
 
 double distanzaMinima(struct punto array[], int size, int *index1, int *index2) {
-    if (size < 2) return;  // Non ci sono abbastanza punti per calcolare la distanza
+    if (size < 2) return 0;  // Non ci sono abbastanza punti per calcolare la distanza
 
     *index1 = 0;
     *index2 = 1;
