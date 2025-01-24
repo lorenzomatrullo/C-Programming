@@ -1,5 +1,8 @@
-#include <stdio.h>
+/*
+    INSERTION SORT
+*/
 
+#include <stdio.h>
 
 void insertionSort(int *array, int size) {
 
