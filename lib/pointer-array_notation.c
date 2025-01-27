@@ -16,7 +16,7 @@ int main(){
     int a[] = {1, 2, 3};
     int *p = a;
 
-    printf("MEMORY ADDRESS of a: %p", a);
+    printf("MEMORY ADDRESS of a: %p", &a);
     printf("\nMEMORY ADDRESS of p: %p", p);
 
     printf("\n\n");
