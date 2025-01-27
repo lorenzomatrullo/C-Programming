@@ -15,3 +15,5 @@ void AOSMIN (int array[], int size) {
         array[i] = temp;
     }
 }
+
+// complessità O(n^2)

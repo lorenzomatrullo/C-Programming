@@ -19,24 +19,4 @@ void insertionSort(int *array, int size) {
     }
 }
 
-void printArray(int *array, int size) {
-    for (int i = 0; i < size; i++) {
-        printf("%d ", array[i]);
-    }
-    printf("\n");
-}
-
-int main() {
-    int array[] = {12, 11, 13, 5, 6};
-    int size = sizeof(array)/sizeof(array[0]);
-
-    printf("Original Array: ");
-    printArray(array, size);
-
-    insertionSort(array, size);
-
-    printf("Sorted Array: ");
-    printArray(array, size);
-
-    return 0;
-}
+// complessità O(n^2)

@@ -21,3 +21,5 @@ int ricercaBinariaIterativa (char *array, int size, char key[]) {
 
     return -1;
 }
+
+// complessità log2(n)

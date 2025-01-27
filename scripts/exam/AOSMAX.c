@@ -15,3 +15,5 @@ void AOSMAX (char array[], int size) {
         array[i] = temp;
     }
 }
+
+// complessità O(n^2)

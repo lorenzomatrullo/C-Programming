@@ -1,22 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-int string_matching(char key[], char string[]);
-
-int main() {
-    char string[] = "Hello world to world";
-    char key[] = "world";
-    
-    printf("\nString: %s\n", string);
-    printf("Key string: %s\n", key);
-    
-    int occurrences = string_matching(key, string);
-    
-    printf("Number of occurrences of the key string in the text: %d\n", occurrences);
-    
-    return 0;
-}
-
 int string_matching(char key[], char string[]) {
     int key_length = strlen(key);
     int string_length = strlen(string);
@@ -30,3 +14,5 @@ int string_matching(char key[], char string[]) {
     
     return count_key;
 }
+
+// complessità O(n * m)
