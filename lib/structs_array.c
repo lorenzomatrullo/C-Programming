@@ -20,6 +20,5 @@ int main(){
         printf("%.1lf\n", students[i].gpa);
     }
 
-
     return 0;
 }

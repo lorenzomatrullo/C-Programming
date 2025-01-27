@@ -19,6 +19,5 @@ int main(){
         %- = left allign
     */
 
-
     return 0;
 }

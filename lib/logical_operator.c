@@ -19,8 +19,7 @@ int main(){
     } else {
         printf("\nThe weather is bad");
     }
-
-
+    
 
     return 0;
 }
