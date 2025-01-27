@@ -26,7 +26,7 @@ int main(){
 void add_one(int *p){
 
     // not passing through "and operator" because we wanna get the address of "a pointing to b" and not the address of a;
-    printf("\nMEMORY ADDRESS of a: %p", p); 
+    printf("\nMEMORY ADDRESS of a: %p", p);
 
     *p = *p + 1;
 }
