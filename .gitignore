@@ -1,1 +1,22 @@
+*.o
+*.obj
 *.exe
+*.out
+a.out
+
+# Debug and symbol files
+*.stackdump
+*.dSYM/
+
+# Build directories
+build/
+dist/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+.DS_Store
