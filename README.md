@@ -1,5 +1,4 @@
 ## C Programming
-
 This repository is a **hands‑on C programming course** built entirely from small, focused programs.
 
 Each file is a self‑contained example that you can compile, run, and modify in a few seconds. The lessons are ordered so you start with variables and control flow, move through arrays, strings, functions, pointers, and memory, and finish with more realistic practice scripts and exam‑style algorithms.
@@ -14,7 +13,6 @@ You can treat this repo as a “course in a box”:
 <br>
 
 ## Requirements
-
 To run the examples in this repo you need:
 - A C compiler (`gcc` or `clang`).
 - **Visual Studio Code**.
@@ -38,7 +36,6 @@ For more details on configuring C/C++ in VS Code, see the official docs:
 <br>
 
 ## Learning Path
-
 ### 1. Core language (library examples in `libs/`)
 
 **Basics**
@@ -118,7 +115,6 @@ For more details on configuring C/C++ in VS Code, see the official docs:
 <br>
 
 ## 2. Practice scripts (in `scripts/`)
-
 These are small programs that use the core language features in more practical ways.
 
 - [48 – Even or Odd](scripts/48-even_or_odd.c)
@@ -166,7 +162,6 @@ These are small programs that use the core language features in more practical w
 <br>
 
 ## 3. Exam-style algorithms
-
 These files contain more advanced algorithms and exam practice tasks. They still use the same C features as the rest of the repo, just in more complex combinations.
 
 - [Merge Arrays](scripts/exam/MergeArrays.c)
@@ -203,7 +198,6 @@ These files contain more advanced algorithms and exam practice tasks. They still
 <br>
 
 ## How to work through the repo
-
 - **New to C?** Start at `libs/01-variables.c` and move forward in order.
 - **Need a specific topic?** Jump to the section above (for example, pointers, files, or recursion) and open the matching numbered file.
 - **Preparing for exams?** Focus on the `scripts/` practice programs first, then the `scripts/exam/` tasks.
