@@ -1,11 +1,39 @@
 ## C Programming
 
-This repository is a collection of small C programs that build up like a textbook.  
+This repository is a **hands‑on C programming course** built entirely from small, focused programs.
+
+Each file is a self‑contained example that you can compile, run, and modify in a few seconds. The lessons are ordered so you start with variables and control flow, move through arrays, strings, functions, pointers, and memory, and finish with more realistic practice scripts and exam‑style algorithms.
+
+Use it as a **reference** when you forget a detail, or follow the numbered files in order as a **mini C textbook you can execute**. 
 
 You can treat this repo as a “course in a box”:
 - Start from lower numbers and move forward.
 - Compile and run each file.
 - Tweak values and inputs to see what changes.
+
+<br>
+
+## Requirements
+
+To run the examples in this repo you need:
+- A C compiler (`gcc` or `clang`).
+- **Visual Studio Code**.
+- The **C/C++** extension by Microsoft.
+- The **Code Runner** extension (for one-click run).
+
+Quick setup with VS Code:
+1. Install [VS Code](https://code.visualstudio.com/download) and add the **C/C++** and **Code Runner** extensions from the Extensions view.
+2. Install a C compiler and make sure `gcc` or `clang` is available in the VS Code terminal:
+   ```bash
+   gcc --version
+   # or
+   clang --version
+   ```
+3. Open this folder in VS Code (`File` → `Open Folder…`).
+4. Open any `.c` file and use **Code Runner** (the play icon) to compile and run it.
+
+For more details on configuring C/C++ in VS Code, see the official docs:  
+[C/C++ in Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp).
 
 <br>
 
