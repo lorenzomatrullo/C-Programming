@@ -36,7 +36,7 @@ For more details on configuring C/C++ in VS Code, see the official docs:
 <br>
 
 ## Learning Path
-### 1. Core language (library examples in `libs/`)
+### 1. Core language
 
 **Basics**
 
@@ -90,7 +90,7 @@ For more details on configuring C/C++ in VS Code, see the official docs:
 - [33 – Pass by Reference](libs/33-pass_by_reference.c)
 - [34 – Pointer-Array Notation](libs/34-pointer-array_notation.c)
 - [35 – Dynamic Memory Allocation](libs/35-dynamic_allocated_memory.c)
-- [36 – Memory Reallocation (`realloc`)](libs/36-realloc.c)
+- [36 – Memory Reallocation](libs/36-realloc.c)
 
 **User-defined types and language features**
 
@@ -114,7 +114,7 @@ For more details on configuring C/C++ in VS Code, see the official docs:
 
 <br>
 
-## 2. Practice scripts (in `scripts/`)
+## 2. Practice scripts
 These are small programs that use the core language features in more practical ways.
 
 - [48 – Even or Odd](scripts/48-even_or_odd.c)
